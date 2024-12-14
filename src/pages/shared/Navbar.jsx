@@ -62,7 +62,7 @@ const Navbar = () => {
                     user ? <>
                         <button onClick={handleSignOut} className="btn">Sign out</button>
                     </> : <>
-                        <Link className='hover:text-blue-600' to="/register">Register</Link>
+                        <Link className='hover:btn-link' to="/register">Register</Link>
                         <Link to="/signIn">
                             <button className="btn btn-primary w-24 hover:btn-neutral">Sign In</button>
                         </Link>
