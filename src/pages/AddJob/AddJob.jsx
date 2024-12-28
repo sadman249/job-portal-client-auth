@@ -19,7 +19,7 @@ const AddJob = () => {
         newJob.responsibilities = newJob.responsibilities.split('\n')
         console.log(newJob);
 
-        fetch('https://job-portal-server-five.vercel.app/jobs', {
+        fetch(`${import.meta.env.VITE_API_URL}/jobs`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

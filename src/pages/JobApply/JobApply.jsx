@@ -26,7 +26,7 @@ const JobApply = () => {
             resume
         }
 
-        fetch('https://job-portal-server-five.vercel.app/job-applications', {
+        fetch(`${import.meta.env.VITE_API_URL}/job-applications`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

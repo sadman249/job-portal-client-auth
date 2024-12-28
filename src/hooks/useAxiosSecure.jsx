@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const axiosInstance = axios.create({
-    baseURL: 'https://job-portal-server-five.vercel.app',
+    baseURL: `${import.meta.env.VITE_API_URL}`,
     withCredentials: true
 });
 
